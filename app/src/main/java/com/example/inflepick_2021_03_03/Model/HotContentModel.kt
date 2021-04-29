@@ -1,7 +1,7 @@
 package com.example.inflepick_2021_03_03.Model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-
+//
 
 /* http://www.jsonschema2pojo.org/ -> pojo 생성하는 사이트 임
 json 구조를 데이터 클래스와 일치시키기 위함*/
