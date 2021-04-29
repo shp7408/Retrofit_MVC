@@ -16,16 +16,15 @@
         android:layout_marginTop="270dp"
         android:layout_marginEnd="94dp"
         android:layout_marginRight="94dp"
-        android:text="인플루언서의 모든 리뷰가 궁금하다면?"
+        android:text="Vel_SH"
         android:textColor="@color/white_color"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+<!--    <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="70dp"
@@ -40,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

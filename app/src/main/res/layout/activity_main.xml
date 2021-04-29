@@ -42,7 +42,7 @@
                 android:layout_gravity="center|start"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="InflePick"
+                android:text="Vel_SH"
                 android:textColor="@color/main_color"
                 android:textSize="25sp"
                 />

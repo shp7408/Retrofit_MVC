@@ -6,7 +6,11 @@
 
 
     <!-- 웹 컬러 -->
+    <color name="main_color">#000</color>
+<!--
     <color name="main_color">#fc6f55</color>
+-->
+
     <color name="main_color_pastel">#4Dfb6c76</color>
 
     <color name="main_sub_color">#fa6a9d</color>
