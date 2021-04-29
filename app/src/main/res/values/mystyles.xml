@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 타이틀 용 -->
+    <style name = "LARGE_BLACK">
+        <item name = "android:textSize">25sp</item>
+        <item name = "android:textColor">@color/black</item>
+        <item name = "android:textStyle">bold</item>
+
+    </style>
+
+    <!-- 서브 타이틀 용 -->
+    <style name = "MIDDLE_BLACK">
+        <item name = "android:textSize">17sp</item>
+        <item name = "android:textColor">@color/black</item>
+        <item name = "android:textStyle">bold</item>
+    </style>
+
+    <style name = "MIDDLE_GRAY">
+        <item name = "android:textSize">17sp</item>
+        <item name = "android:textColor">@color/grey</item>
+    </style>
+
+
+
+    <style name = "MIDDLE2_BLACK">
+        <item name = "android:textSize">15sp</item>
+        <item name = "android:textColor">@color/black</item>
+        <item name = "android:textStyle">bold</item>
+    </style>
+
+    <style name = "MIDDLE2_GRAY">
+        <item name = "android:textSize">15sp</item>
+        <item name = "android:textColor">@color/grey</item>
+    </style>
+
+
+
+    <!-- 일반 글씨 -->
+    <style name = "SMALL_BLACK">
+        <item name = "android:textSize">12sp</item>
+        <item name = "android:textColor">@color/black</item>
+    </style>
+
+    <style name = "SMALL_GRAY">
+        <item name = "android:textSize">12sp</item>
+        <item name = "android:textColor">@color/grey</item>
+    </style>
+
+
+</resources>

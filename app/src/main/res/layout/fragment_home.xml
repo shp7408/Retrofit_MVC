@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hotItemTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOT 아이템"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/LARGE_BLACK"
+        android:layout_margin="20dp"/>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotItemTxt"
+        android:paddingHorizontal="20dp"
+        />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:ci_drawable="@drawable/selected_circle"
+        app:ci_drawable_unselected="@drawable/unselected_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager2"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_ad"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator"
+        />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        app:ci_drawable="@drawable/selected_circle"
+        app:ci_drawable_unselected="@drawable/unselected_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator"
+        />
+
+
+    <TextView
+        android:id="@+id/hotContentTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOT 컨텐츠"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator2"
+        style="@style/LARGE_BLACK"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hotContentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@+id/hotContentTxt"
+        tools:layout_editor_absoluteX="0dp"
+         />
+
+
+        <TextView
+            android:id="@+id/hotInfluencerTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOT 인플루언서"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotContentRecyclerView"
+            style="@style/LARGE_BLACK"
+            android:layout_margin="30dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hotInfluencerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toBottomOf="@+id/hotInfluencerTxt"
+            tools:layout_editor_absoluteX="0dp"
+            />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commandTagRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toBottomOf="@+id/hotInfluencerRecyclerView"
+            tools:layout_editor_absoluteX="0dp"
+            android:background="@color/main_color_pastel"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/commandTagTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 추천태그 아이템"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commandTagRecyclerView"
+            style="@style/LARGE_BLACK"
+            android:layout_margin="30dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <!-- 웹 컬러 -->
+    <color name="main_color">#fc6f55</color>
+    <color name="main_color_pastel">#4Dfb6c76</color>
+
+    <color name="main_sub_color">#fa6a9d</color>
+    <color name="button_color">#fb6c76</color>
+    <color name="border_color">#9a9a9a</color>
+    <color name="time_color">#7d7d7d</color>
+    <color name="white_color">#f7f7f8</color> //main_background
+    <color name="category_color">#828282</color>
+    <color name="influencer_name_color">#000</color>
+    <color name="subscriber_color">#c41919</color>
+
+    <color name="black">#000000  </color>
+    <color name="red">#FF0000  </color>
+    <color name="blue">#0000FF  </color>
+    <color name="grey">#424242  </color>
+    <color name="transparent">#00000000</color>
+    <color name="grey2">#BDBDBD</color>
+
+
+
+</resources>

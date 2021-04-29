@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">inflePick_2021_03_03</string>
+    <string name="navi_myprofile">마이 페이지</string>
+    <string name="navi_search">검색</string>
+    <string name="navi_home">홈</string>
+
+</resources>

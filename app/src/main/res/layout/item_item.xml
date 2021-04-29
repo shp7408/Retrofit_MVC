@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 왼 위 오 방향 부분에 여백 설정하기 -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/mainHotImv"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintBottom_toTopOf="@+id/guide_line5"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toStartOf="@+id/guide_line4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guide_line"
+            app:layout_constraintTop_toTopOf="@+id/guide_line2"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.4"
+            android:background="@drawable/bordershadow2"/>
+
+    <TextView
+        android:id="@+id/mainHotCatTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하이라이터/쉐이딩"
+        app:layout_constraintBottom_toTopOf="@+id/mainHotBrandTxt"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line3"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/mainHotImv"
+        app:layout_constraintTop_toTopOf="@+id/guide_line2" />
+
+    <TextView
+        android:id="@+id/mainHotBrandTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PERIPERA"
+        app:layout_constraintBottom_toTopOf="@+id/mainHotNameTxt"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line3"
+        app:layout_constraintStart_toEndOf="@+id/mainHotImv"
+        app:layout_constraintTop_toBottomOf="@+id/mainHotCatTxt"
+        android:textColor="@color/main_color"/>
+
+
+    <TextView
+        android:id="@+id/mainHotNameTxt"
+        style="@style/MIDDLE2_BLACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        android:text="잉크 브이 쉐딩"
+        app:layout_constraintBottom_toTopOf="@+id/mainHotYTxt"
+        app:layout_constraintEnd_toStartOf="@+id/guide_line3"
+        app:layout_constraintStart_toEndOf="@+id/mainHotImv"
+        app:layout_constraintTop_toBottomOf="@+id/mainHotBrandTxt" />
+
+    <TextView
+        android:id="@+id/mainHotYTxt"
+        style="@style/MIDDLE_BLACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/drawable_right_image_youtube"
+        android:drawableLeft="@drawable/drawable_right_image_youtube"
+        android:drawablePadding="8dp"
+        android:text="영상 리뷰 31건"
+        app:layout_constraintBottom_toTopOf="@+id/mainHotITxt"
+        app:layout_constraintStart_toStartOf="@+id/guide_line4"
+        app:layout_constraintTop_toBottomOf="@+id/mainHotNameTxt" />
+
+    <TextView
+        android:id="@+id/mainHotITxt"
+        style="@style/MIDDLE_BLACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/drawable_right_image_instagram"
+        android:drawableLeft="@drawable/drawable_right_image_instagram"
+        android:drawablePadding="8dp"
+        android:text="해쉬태그 25건"
+        app:layout_constraintBottom_toTopOf="@+id/mainHotBTxt"
+        app:layout_constraintStart_toStartOf="@+id/guide_line4"
+        app:layout_constraintTop_toBottomOf="@+id/mainHotYTxt" />
+
+    <TextView
+        android:id="@+id/mainHotBTxt"
+        style="@style/MIDDLE_BLACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/drawable_right_image_blog"
+        android:drawableLeft="@drawable/drawable_right_image_blog"
+        android:drawablePadding="8dp"
+        android:text="블로그 리뷰 31건"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line5"
+        app:layout_constraintStart_toStartOf="@+id/guide_line4"
+        app:layout_constraintTop_toBottomOf="@+id/mainHotITxt"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
